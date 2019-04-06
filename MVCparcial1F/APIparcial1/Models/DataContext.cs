@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace MVCparcial1F.Models
+namespace APIparcial1.Models
 {
     public class DataContext:DbContext
     {
@@ -12,5 +12,7 @@ namespace MVCparcial1F.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<APIparcial1.Models.AleMenachoFriends> AleMenachoFriends { get; set; }
     }
 }
